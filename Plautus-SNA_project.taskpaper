@@ -1,0 +1,31 @@
+Summer 2021 CESTA Project:
+	- Data collection/collation:
+		- Compile data for Salma. @done
+		- Count line-numbers for character interactions.
+		- Devise other categories of data for node-sizes.
+	- Online prototype:
+		- Set up a GitHub repo for the project.
+		- Send Salma login credentials for the project.
+		- Set up a GitHub.io static website for the prototype.
+		- Compose project docs for the site:
+			- A 'README'.
+			- A 'Note to Contributors'
+			- A 'Project Statement' (or similar).
+	- Training/methodology:
+		- Learn about the JSON spec for encoding data.
+		- Read up on D3, and review Salma's code once it is uploaded to the GitHub site.
+		- Develop a roadmap for future work on the project.
+			Post this to the website?
+
+
+Future Work:
+	- Develop a project roadmap, based on the existing prototype.
+	- Devise a plan for future work:
+		- Develop a workflow for contributors.
+		E.g., for contributing to various stages of work, such as data gathering, data encoding, site coding, and so on.
+		- Compose and publish 'Project Roadmap' to GitHub page.
+		- Recruit individuals to work on the project.
+		E.g., graduate students; colleagues in the field; undergraduates; CESTA interns.
+	- Advertise the project.
+	- Investigate feasible publication options based on the project.
+	E.g., perhaps a short article to a DH-specific journal? Or to a more open-minded Classics journal?
