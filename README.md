@@ -39,15 +39,16 @@ corpus.
 
 # Project TODO:
 
-- [] Develop a project roadmap, based on the existing prototype.
-- [] Devise a plan for future work:
-    - [] Develop a workflow for contributors. E.g., for contributing to various stages of
+- [ ] Develop a project roadmap, based on the existing prototype.
+* [ ] Develop a plan for applying the prototype to other texts than *Captivi.*
+- [ ] Devise a plan for future development:
+    - [ ] Develop a workflow for contributors. E.g., for contributing to various stages of
       work, such as data gathering, data encoding, site coding, and so on.
-    - [] Compose and publish 'Project Roadmap' to GitHub page.
-    - [] Recruit individuals to work on the project. E.g., graduate students; colleagues in
+    - [ ] Compose and publish 'Project Roadmap' to GitHub page.
+    - [ ] Recruit individuals to work on the project. E.g., graduate students; colleagues in
       the field; undergraduates; CESTA interns.
-- [] Advertise the project.
-- [] Investigate feasible publication options based on the project. E.g., perhaps a short
+- [ ] Advertise the project.
+- [ ] Investigate feasible publication options based on the project. E.g., perhaps a short
   article to a DH-specific journal? Or to a more open-minded Classics journal?
 
 # Note to contributors
