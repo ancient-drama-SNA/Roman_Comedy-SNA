@@ -7,7 +7,7 @@
     - Stanford Center for Spatial and Textual Analysis (CESTA, https://cesta.stanford.edu)
 
 
-# Project Overview:
+## Project Overview:
 
 The major goal of this project is to develop a methodology and framework for modeling "social
 network relationships" in Roman Comedy (initially, the plays of Plautus, with later work on
@@ -24,7 +24,7 @@ ancient Roman society—but, so far as I know, they have never been examined fro
 networking perspective. Until now!
 
 
-# Project Goals
+## Project Goals
 
 By working with CESTA I hope to, ultimately, develop a system that will easily make social
 network maps—and corresponding textual data—of Plautus' character interactions available
@@ -37,7 +37,19 @@ ways; the developed methodology will then be extended to all of the other plays 
 corpus.
 
 
-# Project TODO:
+## Example map:
+
+* Currently we are working to develop a *dynamic* (i.e., interactive and non-static) network
+  map for the play _Captivi_, by using the [D3.js engine](https://d3js.org).
+* Here is an example of a simple, _static_ network map created using Python, `matplotlib`, and
+  `networkx`:
+
+![sample map](https://github.com/ancient-drama-SNA/Roman_Comedy-SNA/blob/main/Captivi-prototype/Captivi_map-V1/Captivi_network.png)
+
+
+
+
+## Project TODO:
 
 - [ ] Develop a project roadmap, based on the existing prototype.
 * [ ] Develop a plan for applying the prototype to other texts than *Captivi.*
@@ -51,6 +63,6 @@ corpus.
 - [ ] Investigate feasible publication options based on the project. E.g., perhaps a short
   article to a DH-specific journal? Or to a more open-minded Classics journal?
 
-# Note to contributors
+## Note to contributors
 
 Hmmm...
