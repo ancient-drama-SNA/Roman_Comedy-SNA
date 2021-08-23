@@ -9,11 +9,10 @@
 
 ## Project Overview:
 
-The major goal of this project is to develop a methodology and framework for modeling "social
-network relationships" in Roman Comedy (initially, the plays of Plautus, with later work on
-Terence). That is, to devise a visual map of social interactions among characters, using
-different indices of interaction. For example: total lines spoken between characters, vs.
-total time onstage vs. total number of characters in a play; and so on. 
+This project aims to devise a methodology for generating "social network maps" among
+characters in Ancient Roman Comedy, using different indices of interaction. For example: total
+lines spoken between characters, vs. total time onstage vs. total number of characters in a
+play; and so on. 
 
 Plautus is an important figure in Latin literature because (among other things), his work is
 one of the few places where we can see people of different statuses, ethnicities, economic
@@ -25,6 +24,21 @@ networking perspective. Until now!
 
 
 ## Project Goals
+
+The major *short-term* goals of the project are: 
+    1) to develop a simple workflow for mapping "social network relationships" in Roman Comedy
+       (initially, the plays of Plautus, with later work on Terence);
+    2) to make the generated maps open to various queries—i.e., let users query them for
+       various data points, such as "network interactions involving enslaved characters";
+    3) to make the generated maps (and associated data) available online, for free, for use by
+       scholars and interested non-specialists.
+
+Long-term goals include opening up the developed framework to ancient drama generally (e.g.,
+Greek and Roman Tragedy; Senecan drama; etc.), and to allow comparison of data among the
+various mapped data-sets. (E.g., comparing number of interactions by certain character-types
+across all of Greco-Latin drama.) Advanced use-cases might include e.g. filtering
+network interactions by defined categories or tags (e.g., "all soliloquies in Roman comedy";
+"all instances where non-dramatic entities seem to appear onstage"; and so on).
 
 By working with CESTA I hope to, ultimately, develop a system that will easily make social
 network maps—and corresponding textual data—of Plautus' character interactions available
