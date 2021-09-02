@@ -51,28 +51,26 @@ ways; the developed methodology will then be extended to all of the other plays 
 corpus.
 
 
-## Example map:
+## Example STATIC map:
 
 * Currently we are working to develop a *dynamic* (i.e., interactive and non-static) network
   map for the play _Captivi_, by using the [D3.js engine](https://d3js.org).
 * Here is an example of a simple, _static_ network map created using Python, `matplotlib`, and
   `networkx`:
 
-![sample map](https://github.com/ancient-drama-SNA/Roman_Comedy-SNA/blob/main/Captivi-prototype/Captivi_map-V1/Captivi_network.png)
+![sample map,75](https://github.com/ancient-drama-SNA/Roman_Comedy-SNA/blob/main/Captivi-prototype/Captivi_map-V1/Captivi_network.png)
 
 
-## Prototype map:
+## Prototype DYNAMIC map:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWvzXQW" data-user="salmakamni" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/salmakamni/pen/QWvzXQW">
-  vue-d3-network RC</a> by Salma Kamni (<a href="https://codepen.io/salmakamni">@salmakamni</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-
+* The dynamic prototype is being developed using D3.js and the Jekyll web platform.
+* [Current Prototype Available Here](https://ancient-drama-sna.github.io/Roman_comedy_networks/)
+    - Repo for the GitHub Pages site [available here](https://github.com/ancient-drama-SNA/Roman_comedy_networks).
 
 
 ## Project TODO:
 
+- [X] Develop a prototype workflow and toolkit to publish SNA data online.
 - [ ] Develop a project roadmap, based on the existing prototype.
 * [ ] Develop a plan for applying the prototype to other texts than *Captivi.*
 - [ ] Devise a plan for future development:
