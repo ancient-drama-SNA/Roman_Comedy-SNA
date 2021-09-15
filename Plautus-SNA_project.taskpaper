@@ -1,12 +1,11 @@
 Summer 2021 CESTA Project:
 	- Data collection/collation:
 		- Compile data for Salma. @done(2021-08-13)
-		- Count line-numbers for character interactions. @maybe
 		- Devise other categories of data for node-sizes. @done(2021-08-16)
 	- Online prototype:
 		- Set up a GitHub repo for the project. @done(2021-08-16)
 		- Send Salma login credentials/info for the project. @done(2021-08-16)
-		- Set up a GitHub.io static website for the prototype.
+		- Set up a GitHub.io static website for the prototype. @done(2021-09-14)
 		- Compose project docs for the site:
 			- A 'README'. @done(2021-08-16)
 			- Fill out README with more project info.
@@ -14,12 +13,12 @@ Summer 2021 CESTA Project:
 				- A 'Project Roadmap' (and so on).
 				- A 'Project Statement' (or similar). @done(2021-08-16)
 				- A 'recommended workflow' page. @maybe
-				- A demonstration/example png from Captivi?
+				- A demonstration/example png from Captivi? @done(2021-09-14)
 				- Add to acknowledgements: William Mattingly.
 	- Training/methodology:
-		- Learn about the JSON spec for encoding data.
-		- Read up on D3.js framework. 
-		- Read Salma's code once it is uploaded to the GitHub site.
+		- Learn about the JSON spec for encoding data. @done(2021-09-14)
+		- Read up on D3.js framework. @done(2021-09-14)
+		- Read Salma's code once it is uploaded to the GitHub site. @done(2021-09-14)
 		- Develop a roadmap for future work on the project.
 			- Post this to the website/github page, once finished.
 
@@ -35,3 +34,6 @@ Future Work:
 	- Advertise the project.
 	- Investigate feasible publication options based on the project.
 	E.g., perhaps a short article to a DH-specific journal? Or to a more open-minded Classics journal?
+	- Update current prototypes:
+		- Count line-numbers for character interactions in Captivi. @maybe
+		- Work out an "insult map", for comparison.
