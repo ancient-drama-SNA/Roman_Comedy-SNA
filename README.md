@@ -1,4 +1,4 @@
-# Social Network Analysis of ancient Roman Comedy 
+# Social Network Analysis of ancient Roman Comedy
 
 * Project currently being developed by:
     - Hans Bork (Assistant Professor of Classics, Stanford University)
@@ -54,8 +54,8 @@ corpus.
 ## Example STATIC map:
 
 * Currently we are working to develop a *dynamic* (i.e., interactive and non-static) network
-  map for the play _Captivi_, by using the [D3.js engine](https://d3js.org).
-* Here is an example of a simple, _static_ network map created using Python, `matplotlib`, and
+  map for the play *Captivi*, by using the [D3.js engine](https://d3js.org).
+* Here is an example of a simple, *static* network map created using Python, `matplotlib`, and
   `networkx`:
 
 ![sample map,75](https://github.com/ancient-drama-SNA/Roman_Comedy-SNA/blob/main/Captivi-prototype/Captivi_map-V1/Captivi_network.png)
@@ -72,16 +72,17 @@ corpus.
 
 - [X] Develop a prototype workflow and toolkit to publish SNA data online.
 - [ ] Develop a project roadmap, based on the existing prototype.
-* [ ] Develop a plan for applying the prototype to other texts than *Captivi.*
+- [ ] Develop a plan for applying the prototype to other texts than *Captivi.*
 - [ ] Devise a plan for future development:
-    - [ ] Develop a workflow for contributors. E.g., for contributing to various stages of
-      work, such as data gathering, data encoding, site coding, and so on.
+    - [ ] Develop a workflow for contributors. E.g., for contributing to various stages of work, such as data gathering, data encoding, site coding, and so on.
     - [ ] Compose and publish 'Project Roadmap' to GitHub page.
     - [ ] Recruit individuals to work on the project. E.g., graduate students; colleagues in
       the field; undergraduates; CESTA interns.
 - [ ] Advertise the project.
 - [ ] Investigate feasible publication options based on the project. E.g., perhaps a short
   article to a DH-specific journal? Or to a more open-minded Classics journal?
+
+
 
 ## Note to contributors
 
