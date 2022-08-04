@@ -2,9 +2,12 @@
 
 * Project currently being developed by:
     - Hans Bork (Assistant Professor of Classics, Stanford University)
-    - Salma Kamni (Stanford University)
-    - Daniel Bush (Postdoctoral Fellow, Stanford Center for Spatial and Textual Analysis)
+    * Marguerite DeMarco (Stanford University)
+    * Annie Lamar (PhD Candidate, Classics Dept., Stanford University)
     - Stanford Center for Spatial and Textual Analysis (CESTA, https://cesta.stanford.edu)
+    - With previous contributions from:
+        - Salma Kamni (Stanford University)
+        - Daniel Bush (Postdoctoral Fellow, Stanford Center for Spatial and Textual Analysis)
 
 
 ## Project Overview:
