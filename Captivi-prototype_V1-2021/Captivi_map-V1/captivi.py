@@ -23,6 +23,6 @@ for row in range(sheet.nrows):
 
 G.add_edges_from(names)
 print(names)
-nx.draw(G, with_labels=True, font_size=12, font_family = "elena", bbox=dict())
+nx.draw(G, with_labels=True, font_size=14, font_family = "Helvetica", font_color='white', node_color='blue', bbox=dict())
 
 plt.show()
