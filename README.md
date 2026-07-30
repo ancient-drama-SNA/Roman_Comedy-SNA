@@ -74,8 +74,8 @@ corpus.
 ## Project TODO:
 
 - [X] Develop a prototype workflow and toolkit to publish SNA data online.
-- [ ] Develop a project roadmap, based on the existing prototype.
-- [ ] Develop a plan for applying the prototype to other texts than *Captivi.*
+- [X] Develop a project roadmap, based on the existing prototype.
+- [X] Develop a plan for applying the prototype to texts other than *Captivi.*
 - [ ] Devise a plan for future development:
     - [ ] Develop a workflow for contributors. E.g., for contributing to various stages of work, such as data gathering, data encoding, site coding, and so on.
     - [ ] Compose and publish 'Project Roadmap' to GitHub page.
@@ -86,7 +86,3 @@ corpus.
   article to a DH-specific journal? Or to a more open-minded Classics journal?
 
 
-
-## Note to contributors
-
-Hmmm...
