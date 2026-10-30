@@ -2,12 +2,13 @@
 
 * Project currently being developed by:
     - Hans Bork (Assistant Professor of Classics, Stanford University)
-    * Marguerite DeMarco (Stanford University)
-    * Annie Lamar (PhD Candidate, Classics Dept., Stanford University)
-    - Stanford Center for Spatial and Textual Analysis (CESTA, https://cesta.stanford.edu)
+    * Leo Leger ((Walton High School, Marietta, GA, Class of 2028; https://github.com/TheLeoLeger)
     - With previous contributions from:
         - Salma Kamni (Stanford University)
-        - Daniel Bush (Postdoctoral Fellow, Stanford Center for Spatial and Textual Analysis)
+        * Marguerite DeMarco (Stanford University)
+        * Annie Lamar (Stanford University)
+        - Daniel Bush (Stanford University)
+        - Stanford Center for Spatial and Textual Analysis (CESTA, https://cesta.stanford.edu)
 
 
 ## Project Overview:
