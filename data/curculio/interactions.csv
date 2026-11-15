@@ -506,7 +506,7 @@ C504,5,5.3,688,689,1,CAP,THER;CUR,dialogue,question,,,
 C505,5,5.3,689,690,1.5,THER,CAP,dialogue,threat,,,
 C506,5,5.3,691,692,1.5,CUR,CAP,dialogue,threat,,,the manuscripts give this to the soldier
 C507,5,5.3,692,693,1,CAP,THER;CUR,dialogue,threat,,,
-C508,5,5.3,693,693,0.5,THER,PUER_THER,dialogue,command,,,put a noose on him; Leo gives this to Phaedromus
+C508,5,5.3,693,693,0.5,THER,PUER_THER,dialogue,command,,,put a noose on him; F. Leo attributes this to Phaedromus
 C509,5,5.3,694,694,0.5,CUR,THER,dialogue,,,,the manuscripts give this to Phaedromus
 C510,5,5.3,694,696,2.5,CAP,PLA;PHAE,dialogue,request,,,
 C511,5,5.3,697,698,1.5,PLA,THER,dialogue,request,,,
