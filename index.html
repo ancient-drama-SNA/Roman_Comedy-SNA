@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roman Comedy Social Networks</title>
+<script src="lib/cytoscape.min.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: #222; background: #fbfaf7; }
+  header { padding: 14px 20px 10px; border-bottom: 1px solid #ddd; }
+  h1 { margin: 0 0 4px; font-size: 22px; font-weight: normal; }
+  .sub { font-size: 14px; color: #666; }
+  .controls { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; padding: 10px 20px; border-bottom: 1px solid #ddd; font-size: 14px; }
+  .controls label { white-space: nowrap; }
+  select { font: inherit; padding: 2px 4px; }
+  main { display: flex; height: calc(100vh - 140px); min-height: 480px; }
+  #graph { flex: 1; background: #fff; }
+  aside { width: 340px; overflow-y: auto; padding: 16px 18px; border-left: 1px solid #ddd; font-size: 14px; line-height: 1.45; }
+  aside h2 { font-size: 18px; font-weight: normal; margin: 0 0 6px; }
+  aside table { border-collapse: collapse; width: 100%; margin: 6px 0 12px; }
+  aside td { padding: 2px 4px; border-bottom: 1px solid #eee; vertical-align: top; }
+  .muted { color: #777; }
+  .legend span { display: inline-block; margin-right: 12px; }
+  .dot { display: inline-block; width: 11px; height: 11px; border-radius: 50%; margin-right: 4px; vertical-align: -1px; }
+  @media (max-width: 800px) { main { flex-direction: column; height: auto; } #graph { height: 70vh; } aside { width: auto; border-left: none; border-top: 1px solid #ddd; } }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Social networks in Roman comedy</h1>
+  <div class="sub">Prototype. Circles are characters, sized by lines spoken. Lines between them are speeches, thicker for more lines. Click anything for details.</div>
+</header>
+
+<div class="controls">
+  <label>Play <select id="play"></select></label>
+  <label>Show <select id="scene"></select></label>
+  <label><input type="checkbox" id="reported" checked> Reported (offstage) interactions</label>
+  <label><input type="checkbox" id="others"> Gods, objects, audience</label>
+  <label><input type="checkbox" id="rels"> Relationships (family, owner, etc.)</label>
+  <span class="legend">
+    <span><i class="dot" style="background:#3b6ea5"></i>free</span>
+    <span><i class="dot" style="background:#c0392b"></i>enslaved</span>
+    <span><i class="dot" style="background:#999"></i>unknown</span>
+    <span><i class="dot" style="background:#d4a017"></i>other</span>
+  </span>
+</div>
+
+<main>
+  <div id="graph"></div>
+  <aside id="info"><p class="muted">Loading...</p></aside>
+</main>
+
+<script>
+// csv parsing (handles quoted cells)
+function parseCSV(text) {
+  const rows = []; let row = [], cell = '', inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQuotes) {
+      if (c === '"' && text[i + 1] === '"') { cell += '"'; i++; }
+      else if (c === '"') inQuotes = false;
+      else cell += c;
+    } else if (c === '"') inQuotes = true;
+    else if (c === ',') { row.push(cell); cell = ''; }
+    else if (c === '\n' || c === '\r') {
+      if (c === '\r' && text[i + 1] === '\n') i++;
+      row.push(cell); rows.push(row); row = []; cell = '';
+    } else cell += c;
+  }
+  if (cell !== '' || row.length) { row.push(cell); rows.push(row); }
+  const header = rows.shift().map(h => h.trim());
+  return rows.filter(r => r.some(v => v.trim() !== ''))
+             .map(r => Object.fromEntries(header.map((h, i) => [h, (r[i] || '').trim()])));
+}
+
+async function loadCSV(path) {
+  const res = await fetch(path);
+  if (!res.ok) throw new Error('Could not load ' + path);
+  return parseCSV(await res.text());
+}
+
+// load play
+let play = null;
+let playInfo = null;
+
+async function loadPlay(info) {
+  const base = 'data/' + info.folder + '/';
+  const [characters, interactions, scenes, relationships] = await Promise.all(
+    ['characters', 'interactions', 'scenes', 'relationships'].map(n => loadCSV(base + n + '.csv')));
+  play = { characters, interactions, scenes, relationships,
+           byId: Object.fromEntries(characters.map(c => [c.id, c])) };
+  playInfo = info;
+
+  // scene menu
+  const sceneList = [...new Set(interactions.map(r => r.scene))];
+  const acts = [...new Set(interactions.map(r => r.act))];
+  const sel = document.getElementById('scene');
+  sel.innerHTML = '<option value="all">Whole play</option>' +
+    acts.map(a => `<option value="act:${a}">Act ${a}</option>`).join('') +
+    sceneList.map(s => `<option value="scene:${s}">Scene ${s}</option>`).join('');
+  draw();
+}
+
+// graph data
+const PEOPLE = new Set(['person', 'group']);
+const COLORS = { free: '#3b6ea5', enslaved: '#c0392b', unknown: '#999', other: '#d4a017' };
+
+function inView(row, view) {
+  if (view === 'all') return true;
+  const [kind, val] = view.split(':');
+  return kind === 'act' ? row.act === val : row.scene === val;
+}
+
+// status from scenes.csv if one scene, else status_start
+function statusOf(id, view) {
+  const c = play.byId[id];
+  if (!c || !PEOPLE.has(c.kind)) return 'other';
+  if (view.startsWith('scene:')) {
+    const s = play.scenes.find(r => r.scene === view.slice(6) && r.character === id);
+    if (s && s.status_in_scene) return COLORS[s.status_in_scene] ? s.status_in_scene : 'unknown';
+  }
+  return COLORS[c.status_start] ? c.status_start : 'unknown';
+}
+
+function buildElements() {
+  const view = document.getElementById('scene').value;
+  const showReported = document.getElementById('reported').checked;
+  const showOthers = document.getElementById('others').checked;
+  const showRels = document.getElementById('rels').checked;
+  const isShown = id => {
+    const c = play.byId[id];
+    if (!c || c.kind === 'self') return false;
+    return PEOPLE.has(c.kind) || showOthers;
+  };
+
+  const spoken = {};
+  const edges = {};
+  const used = new Set();
+
+  for (const r of play.interactions) {
+    if (!inView(r, view)) continue;
+    const reported = r.mode === 'reported';
+    if (reported && !showReported) continue;
+    const lines = parseFloat(r.lines) || 0;
+    if (!reported) spoken[r.speaker] = (spoken[r.speaker] || 0) + lines;
+    used.add(r.speaker);
+    // split lines between multiple addressees
+    const targets = r.addressee.split(';').map(s => s.trim()).filter(Boolean);
+    for (const t of targets) {
+      if (!isShown(t) || !isShown(r.speaker) || t === r.speaker) continue;
+      used.add(t);
+      const key = r.speaker + '>' + t + (reported ? '>rep' : '');
+      const e = edges[key] || (edges[key] = { source: r.speaker, target: t, lines: 0, count: 0, reported, rows: [] });
+      e.lines += lines / targets.length; e.count++; e.rows.push(r);
+    }
+  }
+
+  const els = [];
+  for (const id of used) {
+    if (!isShown(id)) continue;
+    const c = play.byId[id];
+    els.push({ data: { id, label: c.name, lines: spoken[id] || 0, status: statusOf(id, view) } });
+  }
+  const present = new Set(els.map(e => e.data.id));
+  for (const [key, e] of Object.entries(edges)) {
+    if (!present.has(e.source) || !present.has(e.target)) continue;
+    els.push({ data: { id: key, source: e.source, target: e.target, lines: e.lines, count: e.count, rows: e.rows },
+               classes: e.reported ? 'reported' : '' });
+  }
+  if (showRels) {
+    // hide relationships not revealed yet
+    const order = [...new Set(play.interactions.map(r => r.scene))];
+    let lastScene = order.length - 1;
+    if (view.startsWith('scene:')) lastScene = order.indexOf(view.slice(6));
+    if (view.startsWith('act:')) lastScene = Math.max(...order.map((s, i) => s.split('.')[0] === view.slice(4) ? i : -1));
+    const known = r => r.known_from_scene === 'start' || !order.includes(r.known_from_scene) || order.indexOf(r.known_from_scene) <= lastScene;
+    play.relationships.forEach((r, i) => {
+      if (!present.has(r.from) || !present.has(r.to) || !known(r)) return;
+      els.push({ data: { id: 'rel' + i, source: r.from, target: r.to, rel: r, label: r.type.replace(/_/g, ' ') },
+                 classes: 'rel' });
+    });
+  }
+  return els;
+}
+
+// draw
+let cy = null;
+
+function draw() {
+  const els = buildElements();
+  const maxLines = Math.max(1, ...els.filter(e => e.data.lines !== undefined && !e.data.source).map(e => e.data.lines));
+  const maxEdge = Math.max(1, ...els.filter(e => e.data.source && e.data.count).map(e => e.data.lines));
+  if (cy) cy.destroy();
+  cy = cytoscape({
+    container: document.getElementById('graph'),
+    elements: els,
+    wheelSensitivity: 0.3,
+    maxZoom: 1.6,
+    style: [
+      { selector: 'node', style: {
+          'label': 'data(label)', 'font-family': 'Georgia, serif', 'font-size': 13,
+          'text-valign': 'bottom', 'text-margin-y': 4,
+          'width': n => 18 + 52 * Math.sqrt(n.data('lines') / maxLines),
+          'height': n => 18 + 52 * Math.sqrt(n.data('lines') / maxLines),
+          'background-color': n => COLORS[n.data('status')] || '#999' } },
+      { selector: 'edge', style: {
+          'curve-style': 'bezier', 'target-arrow-shape': 'triangle', 'arrow-scale': 0.8,
+          'line-color': '#9aa5b1', 'target-arrow-color': '#9aa5b1', 'opacity': 0.75,
+          'width': e => 1 + 9 * (e.data('lines') / maxEdge) } },
+      { selector: 'edge.reported', style: { 'line-style': 'dashed', 'line-color': '#c9b27c', 'target-arrow-color': '#c9b27c' } },
+      { selector: 'edge.rel', style: { 'width': 1.5, 'line-color': '#6a9f58', 'target-arrow-color': '#6a9f58',
+          'line-style': 'dotted', 'label': 'data(label)', 'font-size': 10, 'color': '#4b7a3c',
+          'text-background-color': '#fff', 'text-background-opacity': 0.85 } },
+      { selector: ':selected', style: { 'border-width': 3, 'border-color': '#222', 'line-color': '#222', 'target-arrow-color': '#222' } },
+      { selector: '.faded', style: { 'opacity': 0.12 } }
+    ],
+    layout: { name: 'cose', animate: false, nodeRepulsion: () => 4000000, idealEdgeLength: () => 170, nodeOverlap: 40,
+              numIter: 2500, randomize: true, padding: 40 }
+  });
+  cy.on('tap', 'node', ev => showCharacter(ev.target));
+  cy.on('tap', 'edge', ev => showEdge(ev.target));
+  cy.on('tap', ev => { if (ev.target === cy) showSummary(); });
+  showSummary();
+}
+
+// side panel
+const esc = s => String(s).replace(/[&<>"]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]));
+const fmt = n => (Math.round(n * 10) / 10).toString();
+const info = html => { document.getElementById('info').innerHTML = html; };
+
+function highlight(ele) {
+  cy.elements().removeClass('faded');
+  if (ele) cy.elements().not(ele.closedNeighborhood ? ele.closedNeighborhood() : ele.union(ele.connectedNodes())).addClass('faded');
+}
+
+function showSummary() {
+  if (cy) highlight(null);
+  const total = cy.nodes().reduce((s, n) => s + n.data('lines'), 0);
+  info(`<h2>${esc(playInfo.title)}</h2>
+    <p class="muted">${esc(playInfo.author || '')}${playInfo.total_lines ? ', ' + playInfo.total_lines + ' lines' : ''}</p>
+    <p>${cy.nodes().length} characters and ${cy.edges().not('.rel').length} speaker-to-listener links in this view, covering ${fmt(total)} lines spoken onstage.</p>
+    <p class="muted">Dashed gold lines are interactions that are reported but not shown onstage. Arrows point from speaker to listener.</p>`);
+}
+
+function showCharacter(node) {
+  highlight(node);
+  const c = play.byId[node.id()];
+  const partners = {};
+  node.connectedEdges().not('.rel').forEach(e => {
+    const other = e.source().id() === node.id() ? e.target() : e.source();
+    partners[other.data('label')] = (partners[other.data('label')] || 0) + e.data('lines');
+  });
+  const rels = play.relationships.filter(r => r.from === c.id || r.to === c.id);
+  info(`<h2>${esc(c.name)}</h2>
+    <p class="muted">${esc([c.stock_type, c.loeb_label && c.loeb_label !== c.stock_type ? '(' + c.loeb_label + ')' : '', c.gender].filter(Boolean).join(' '))}</p>
+    <table>
+      <tr><td>Lines spoken (this view)</td><td>${fmt(node.data('lines'))}</td></tr>
+      <tr><td>Status</td><td>${esc(c.status_start || '-')}${c.status_end && c.status_end !== c.status_start ? ' to ' + esc(c.status_end) : ''} <span class="muted">${esc(c.status_certainty || '')}</span></td></tr>
+      ${c.aliases ? `<tr><td>Also appears as</td><td>${esc(c.aliases)}</td></tr>` : ''}
+    </table>
+    ${c.note ? `<p>${esc(c.note)}</p>` : ''}
+    ${Object.keys(partners).length ? '<p><b>Talks with</b> (lines, both directions)</p><table>' +
+      Object.entries(partners).sort((a, b) => b[1] - a[1]).map(([k, v]) => `<tr><td>${esc(k)}</td><td>${fmt(v)}</td></tr>`).join('') + '</table>' : ''}
+    ${rels.length ? '<p><b>Relationships</b></p><table>' + rels.map(r =>
+      `<tr><td>${esc(play.byId[r.from]?.name || r.from)} ${esc(r.type.replace(/_/g, ' '))} ${esc(play.byId[r.to]?.name || r.to)}</td><td class="muted">${esc(r.line ? 'line ' + r.line : '')}</td></tr>`).join('') + '</table>' : ''}`);
+}
+
+function showEdge(edge) {
+  highlight(edge);
+  const s = edge.source().data('label'), t = edge.target().data('label');
+  if (edge.hasClass('rel')) {
+    const r = edge.data('rel');
+    info(`<h2>${esc(s)} ${esc(r.type.replace(/_/g, ' '))} ${esc(t)}</h2>
+      <p class="muted">Known from scene ${esc(r.known_from_scene)}${r.line ? ', line ' + esc(r.line) : ''} (${esc(r.certainty)})</p>
+      ${r.note ? `<p>${esc(r.note)}</p>` : ''}`);
+    return;
+  }
+  const rows = edge.data('rows');
+  info(`<h2>${esc(s)} to ${esc(t)}</h2>
+    <p class="muted">${edge.hasClass('reported') ? 'Reported, not shown onstage. ' : ''}${rows.length} speeches, ${fmt(edge.data('lines'))} lines</p>
+    <table>${rows.map(r => `<tr><td>${esc(r.line_start)}${r.line_end !== r.line_start ? '-' + esc(r.line_end) : ''}</td>
+      <td>${esc(r.tags.replace(/;/g, ', '))}${r.as_identity ? ' <span class="muted">(as ' + esc(r.as_identity) + ')</span>' : ''}
+      ${r.note ? '<br><span class="muted">' + esc(r.note) + '</span>' : ''}${r.reported_by ? '<br><span class="muted">reported by ' + esc(play.byId[r.reported_by]?.name || r.reported_by) + '</span>' : ''}</td></tr>`).join('')}</table>`);
+}
+
+// init
+['scene', 'reported', 'others', 'rels'].forEach(id => document.getElementById(id).addEventListener('change', draw));
+
+(async () => {
+  try {
+    const plays = await (await fetch('data/plays.json')).json();
+    const sel = document.getElementById('play');
+    sel.innerHTML = plays.map((p, i) => `<option value="${i}">${esc(p.title)}</option>`).join('');
+    sel.addEventListener('change', () => loadPlay(plays[sel.value]));
+    await loadPlay(plays[0]);
+  } catch (err) {
+    info('<p>Could not load the data. If you opened this file straight from your computer, it needs to be viewed through GitHub Pages or a local web server instead.</p><p class="muted">' + esc(err.message) + '</p>');
+  }
+})();
+</script>
+</body>
+</html>

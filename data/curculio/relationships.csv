@@ -1,0 +1,19 @@
+from,to,type,known_from_scene,line,certainty,note
+PHAE,PAL,owner_of,start,175,stated,Palinurus calls him erus (master)
+PHAE,SERVI,owner_of,start,,inferred,
+CAP,PLA,owner_of,start,43,stated,ends when she is declared free (715)
+CAP,LEAE,owner_of,start,159,stated,Leaena calls him erus
+PHAE,CUR,patron_of,start,67,stated,'parasitum meum'
+PHAE,PLA,lover_of,start,47,stated,mutual
+PHAE,COQ,employer_of,2.2,,inferred,cook prepares Curculio's lunch at Phaedromus' house
+PHAE,SODALIS,friend_of,start,68,stated,'meo sodali'
+THER,PLA,bought,2.3,343,stated,bought her from Cappadox for 30 minae
+THER,PHAE,rival_of,2.3,343,inferred,both want Planesium
+LYCO,THER,banker_of,3.1,429,stated,also his host ('hospiti suo')
+THER,PLA,sibling_of,5.2,640,stated,revealed by the ring
+PERIPLANES,THER,parent_of,5.2,636,stated,
+PERIPLANES,PLA,parent_of,5.2,636,stated,
+CLEOBULA,PLA,parent_of,5.2,643,stated,
+ARCHESTRATA,PLA,nurse_of,5.2,644,stated,
+PHAE,PLA,betrothed_to,5.2,674,stated,
+CAP,PLA,bought,4.2,528,stated,bought her as a little girl for 10 minae

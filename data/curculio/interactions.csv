@@ -1,0 +1,586 @@
+id,act,scene,line_start,line_end,lines,speaker,addressee,mode,tags,as_identity,reported_by,note
+C001,1,1.1,1,2,2,PAL,PHAE,dialogue,question,,,where are you going at this time of night?
+C002,1,1.1,3,6,4,PHAE,PAL,dialogue,answer,,,where Venus and Cupid command
+C003,1,1.1,7,7,0.5,PAL,PHAE,dialogue,,,,cut off
+C004,1,1.1,7,7,0.5,PHAE,PAL,dialogue,complaint,,,
+C005,1,1.1,8,9,2,PAL,PHAE,dialogue,complaint,,,you're carrying your own candle like a slave
+C006,1,1.1,10,11,2,PHAE,PAL,dialogue,answer,,,
+C007,1,1.1,12,12,0.5,PAL,PHAE,dialogue,question,,,
+C008,1,1.1,12,13,1,PHAE,PAL,dialogue,answer,,,
+C009,1,1.1,13,13,0.5,PAL,PHAE,dialogue,question,,,
+C010,1,1.1,14,14,0.5,PHAE,PAL,dialogue,answer,,,points to the shrine of Aesculapius
+C011,1,1.1,14,14,0.5,PAL,PHAE,dialogue,,,,
+C012,1,1.1,15,15,1,PHAE,PAL,dialogue,,,,points to the pimp's door
+C013,1,1.1,16,16,0.5,PHAE,FORES,dialogue,greeting,,,greets the door
+C014,1,1.1,16,18,2,PAL,FORES,dialogue,greeting;question,,,mock-greets the door to tease Phaedromus
+C015,1,1.1,18,18,0.5,PHAE,PAL,dialogue,question,,,are you mocking me?
+C016,1,1.1,19,19,1,PAL,PHAE,dialogue,question,,,
+C017,1,1.1,20,22,3,PHAE,PAL,dialogue,praise,,,praises the silent door
+C018,1,1.1,23,26,3.5,PAL,PHAE,dialogue,question,,,are you after a chaste woman?
+C019,1,1.1,26,27,1,PHAE,PAL,dialogue,answer,,,
+C020,1,1.1,27,30,3.5,PAL,PHAE,dialogue,advice,,,
+C021,1,1.1,32,32,0.5,PHAE,PAL,dialogue,question,,,Loeb prints 32 before 31 (transposed)
+C022,1,1.1,32,31,1.5,PAL,PHAE,dialogue,advice,,,Loeb prints 32 before 31 (transposed)
+C023,1,1.1,33,33,0.5,PHAE,PAL,dialogue,,,,a pimp lives here
+C024,1,1.1,33,38,5.5,PAL,PHAE,dialogue,advice,,,love whatever you can pay for
+C025,1,1.1,39,39,0.5,PHAE,PAL,dialogue,,,,
+C026,1,1.1,39,39,0.5,PAL,PHAE,dialogue,,,,
+C027,1,1.1,40,40,0.5,PHAE,PAL,dialogue,question,,,
+C028,1,1.1,40,40,0.5,PAL,PHAE,dialogue,answer,,,
+C029,1,1.1,41,41,0.33,PHAE,PAL,dialogue,complaint,,,"'obloquere' (pun, see Loeb note 3)"
+C030,1,1.1,41,41,0.33,PAL,PHAE,dialogue,,,,
+C031,1,1.1,41,41,0.33,PHAE,PAL,dialogue,command,,,be quiet
+C032,1,1.1,42,42,0.5,PAL,PHAE,dialogue,,,,
+C033,1,1.1,42,43,1.5,PHAE,PAL,dialogue,command,,,the pimp has a slave girl
+C034,1,1.1,44,44,0.5,PAL,PHAE,dialogue,question,,,
+C035,1,1.1,44,44,0.5,PHAE,PAL,dialogue,answer,,,
+C036,1,1.1,45,45,0.5,PAL,PHAE,dialogue,,,,
+C037,1,1.1,45,47,2.5,PHAE,PAL,dialogue,complaint,,,the pimp wants to make her a prostitute
+C038,1,1.1,48,48,0.5,PAL,PHAE,dialogue,question,,,
+C039,1,1.1,48,48,0.5,PHAE,PAL,dialogue,answer,,,
+C040,1,1.1,49,49,1,PAL,PHAE,dialogue,advice,,,
+C041,1,1.1,50,50,0.5,PHAE,PAL,dialogue,,,,
+C042,1,1.1,50,50,0.5,PAL,PHAE,dialogue,question,,,
+C043,1,1.1,51,52,2,PHAE,PAL,dialogue,answer,,,"chaste as a sister, apart from kissing"
+C044,1,1.1,53,56,4,PAL,PHAE,dialogue,advice,,,flame is next to smoke
+C045,1,1.1,57,57,1,PHAE,PAL,dialogue,,,,
+C046,1,1.1,58,58,1,PAL,PHAE,dialogue,,,,
+C047,1,1.1,59,62,3.5,PHAE,PAL,dialogue,complaint,,,she sneaks over; the pimp is torturing me
+C048,1,1.1,62,62,0.5,PAL,PHAE,dialogue,question,,,
+C049,1,1.1,63,65,2.5,PHAE,PAL,dialogue,complaint,,,the pimp's prices
+C050,1,1.1,65,66,1.5,PAL,PHAE,dialogue,,,,
+C051,1,1.1,67,69,3,PHAE,PAL,dialogue,,,,has sent his parasite to Caria for money
+C052,1,1.1,70,70,1,PAL,PHAE,dialogue,advice,,,points to the altar of Venus
+C053,1,1.1,71,72,2,PHAE,PAL,dialogue,,,,vowed a breakfast to Venus
+C054,1,1.1,73,73,1,PAL,PHAE,dialogue,question,,,pun on 'me' (Loeb note 5)
+C055,1,1.1,74,74,0.5,PHAE,PAL,dialogue,answer,,,
+C056,1,1.1,74,74,0.5,PAL,PHAE,dialogue,,,,
+C057,1,1.1,75,75,0.33,PHAE,SERVI,dialogue,command;give,,,"'cedo, puere, sinum': takes the jug"
+C058,1,1.1,75,75,0.33,PAL,PHAE,dialogue,question,,,
+C059,1,1.1,75,77,2.33,PHAE,PAL,dialogue,answer,,,introduces Leaena
+C060,1,1.1,78,79,1.5,PAL,PHAE,dialogue,,,,
+C061,1,1.1,79,81,2.5,PHAE,PAL,dialogue,,,,
+C062,1,1.1,82,82,0.5,PAL,PHAE,dialogue,question,,,
+C063,1,1.1,82,82,0.5,PHAE,PAL,dialogue,answer,,,
+C064,1,1.1,83,84,1.5,PAL,PHAE,dialogue,complaint,,,
+C065,1,1.1,84,85,1.5,PHAE,PAL,dialogue,command,,,
+C066,1,1.1,86,86,1,PAL,PHAE,dialogue,complaint,,,
+C067,1,1.1,87,87,1,PHAE,PAL,dialogue,command,,,follow me to the door
+C068,1,1.1,88,88,0.5,PAL,PHAE,dialogue,,,,
+C069,1,1.1,88,89,1.5,PHAE,FORES,dialogue,request;physical,,,sprinkles wine on the door
+C070,1,1.1,90,90,1,PAL,FORES,dialogue,question,,,offers the door olives and capers
+C071,1,1.1,91,91,1,PHAE,FORES,dialogue,request,,,
+C072,1,1.1,92,92,0.5,PAL,PHAE,dialogue,question,,,
+C073,1,1.1,92,94,2,PHAE,PAL,dialogue,,,,
+C074,1,1.1,94,94,0.5,PAL,PHAE,dialogue,question,,,why don't you kiss it?
+C075,1,1.1,95,95,0.5,PHAE,PAL,dialogue,command,,,
+C076,1,1.1,95,95,0.5,PAL,PHAE,dialogue,,,,they step back
+C077,1,1.2,96,97a,2,LEAE,SELF,monologue,,,,enters sniffing; Phaedromus and Palinurus overhear
+C078,1,1.2,98,108,11,LEAE,VINUM,monologue,praise,,,addresses the smell of the wine
+C079,1,1.2,109,109,1,LEAE,SELF,monologue,,,,
+C080,1,1.2,110,110,0.2,PHAE,PAL,dialogue,,,,
+C081,1,1.2,110,110,0.2,PAL,PHAE,dialogue,question,,,
+C082,1,1.2,110,110,0.2,PHAE,PAL,dialogue,answer,,,
+C083,1,1.2,110a,110b,0.2,PAL,PHAE,dialogue,,,,
+C084,1,1.2,110b,111,1.2,LEAE,SELF,monologue,question,,,"calls out, not knowing who is there"
+C085,1,1.2,112,113,1.33,PHAE,PAL,dialogue,,,,
+C086,1,1.2,113,113,0.33,PHAE,LEAE,dialogue,command,,,"look at me, Leaena"
+C087,1,1.2,113a,113a,0.33,LEAE,PHAE,dialogue,question,,,
+C088,1,1.2,114,116,3,PHAE,LEAE,dialogue,answer,,,calls himself Liber
+C089,1,1.2,117,117,0.5,LEAE,PHAE,dialogue,question,,,
+C090,1,1.2,117,117,0.5,PHAE,LEAE,dialogue,answer,,,holds up the light
+C091,1,1.2,118,118,1,LEAE,PHAE,dialogue,request,,,
+C092,1,1.2,119,119,0.25,PHAE,LEAE,dialogue,greeting,,,
+C093,1,1.2,119,119,0.25,LEAE,PHAE,dialogue,complaint,,,
+C094,1,1.2,119,119a,0.25,PHAE,LEAE,dialogue,promise,,,
+C095,1,1.2,119a,119a,0.25,LEAE,PHAE,dialogue,complaint,,,
+C096,1,1.2,120,120,0.5,PHAE,LEAE,dialogue,give,,,hands over the jug
+C097,1,1.2,120,120,0.5,LEAE,PHAE,dialogue,greeting,,,
+C098,1,1.2,121,121,1,PAL,LEAE,dialogue,command,,,
+C099,1,1.2,122,122,0.5,PHAE,PAL,dialogue,command,,,
+C100,1,1.2,122,122,0.5,PAL,PHAE,dialogue,,,,
+C101,1,1.2,123,125,3,LEAE,VENUS,dialogue,prayer;physical,,,sprinkles a few drops on the altar
+C102,1,1.2,126-27,126-27,2,PAL,PHAE,dialogue,complaint,,,
+C103,1,1.2,128-29,128-29,1,PHAE,PAL,dialogue,complaint,,,
+C104,1,1.2,128-29,128-29,1,PAL,PHAE,dialogue,advice,,,
+C105,1,1.2,130,130,0.25,PHAE,PAL,dialogue,question,,,
+C106,1,1.2,130,130,0.25,PAL,PHAE,dialogue,answer,,,
+C107,1,1.2,130,130,0.25,PHAE,PAL,dialogue,complaint,,,'male tibi di faciant'
+C108,1,1.2,130,130,0.25,PAL,PHAE,dialogue,advice,,,
+C109,1,1.2,131,131,0.17,LEAE,SELF,monologue,,,,'ah!' while drinking
+C110,1,1.2,131,131,0.17,PAL,LEAE,dialogue,question,,,
+C111,1,1.2,131,131,0.17,LEAE,PAL,dialogue,answer,,,
+C112,1,1.2,131,131,0.17,PAL,LEAE,dialogue,threat,,,cattle prod
+C113,1,1.2,131a,131a,0.17,PHAE,PAL,dialogue,command;physical,,,hits him
+C114,1,1.2,131a,131a,0.17,PAL,PHAE,dialogue,,,,
+C115,1,1.2,132,132,0.2,PHAE,PAL,dialogue,question,,,
+C116,1,1.2,132,132,0.2,PAL,PHAE,dialogue,question,,,
+C117,1,1.2,132,132,0.2,PHAE,PAL,dialogue,answer,,,
+C118,1,1.2,132,132,0.2,PAL,PHAE,dialogue,command,,,
+C119,1,1.2,132,133,1.2,PHAE,LEAE,dialogue,complaint,,,I'm done for
+C120,1,1.2,134,136,2.5,LEAE,PHAE,dialogue,question,,,
+C121,1,1.2,136,136,0.5,PHAE,LEAE,dialogue,answer,,,
+C122,1,1.2,137,138,2,LEAE,PHAE,dialogue,promise,,,I'll bring her here
+C123,1,1.2,139,140,2,PHAE,LEAE,dialogue,promise,,,a vineyard instead of a golden statue
+C124,1,1.2,141,142,1.5,PHAE,PAL,dialogue,question,,,
+C125,1,1.2,142,142,0.5,PAL,PHAE,dialogue,,,,Leaena has gone inside
+C126,1,1.2,143,144,1.5,PHAE,PAL,dialogue,,,,
+C127,1,1.2,144,144,0.5,PAL,PHAE,dialogue,,,,
+C128,1,1.2,145,145,0.5,PHAE,PAL,dialogue,question,,,
+C129,1,1.2,145,146,1.5,PAL,PHAE,dialogue,answer,,,
+C130,1,1.2,147,152,6,PHAE,PESSULI,song,request,,,serenade to the door bolts
+C131,1,1.2,153,154,2,PHAE,PAL,dialogue,complaint,,,'hoc uide'
+C132,1,1.2,155,155,1,PHAE,PESSULI,dialogue,complaint,,,
+C133,1,1.2,156,156,0.33,PHAE,PAL,dialogue,command,,,
+C134,1,1.2,156,156,0.33,PAL,PHAE,dialogue,,,,
+C135,1,1.2,156,157,1.33,PHAE,PAL,dialogue,,,,
+C136,1,1.3,158,160,2.5,LEAE,PLA,dialogue,command;physical,,,pours water on the hinges
+C137,1,1.3,160,161,1.5,PAL,PHAE,dialogue,,,,
+C138,1,1.3,162,163,2,PLA,PHAE,dialogue,question;greeting,,,legal parody (Loeb note 11)
+C139,1,1.3,164,164,1,PHAE,PLA,dialogue,answer,,,
+C140,1,1.3,165,165,1,PLA,PHAE,dialogue,,,,
+C141,1,1.3,166,166,0.5,PHAE,PAL,dialogue,,,,
+C142,1,1.3,166,166,0.5,PAL,PHAE,dialogue,question,,,
+C143,1,1.3,167,167,0.25,PHAE,PAL,dialogue,praise,,,she's lovely
+C144,1,1.3,167,167,0.25,PAL,PHAE,dialogue,,,,
+C145,1,1.3,167,167,0.25,PHAE,PAL,dialogue,,,,I'm a god
+C146,1,1.3,167,167,0.25,PAL,PHAE,dialogue,,,,
+C147,1,1.3,168,168,1,PHAE,PAL,dialogue,question,,,
+C148,1,1.3,169,169,0.5,PAL,PHAE,dialogue,answer,,,
+C149,1,1.3,169,169,0.5,PHAE,PAL,dialogue,command,,,
+C150,1,1.3,170,170,1,PAL,PHAE,dialogue,advice,,,
+C151,1,1.3,171,171,1,PHAE,PLA,dialogue,,,,
+C152,1,1.3,172,172,0.5,PLA,PHAE,dialogue,request;physical,,,"hold me, embrace me"
+C153,1,1.3,172,173,1,PHAE,PLA,dialogue,physical,,,grabs her
+C154,1,1.3,173,174,1.5,PLA,PHAE,dialogue,promise,,,
+C155,1,1.3,175,177,3,PAL,AUDIENCE,aside,complaint,,,no stage direction; could be to himself
+C156,1,1.3,178,180,3,PHAE,PLA,dialogue,,,,no stage direction; general declaration
+C157,1,1.3,181,182,1.5,PAL,PHAE,dialogue,question,,,
+C158,1,1.3,182,182,0.5,PHAE,PAL,dialogue,command,,,
+C159,1,1.3,183,183,0.5,PAL,PHAE,dialogue,question,,,
+C160,1,1.3,183,183,0.5,PHAE,PAL,dialogue,answer,,,
+C161,1,1.3,184,184,0.5,PAL,PHAE,dialogue,,,,
+C162,1,1.3,184,184,0.5,PHAE,PAL,dialogue,,,,
+C163,1,1.3,185,185,1,PAL,PLA,dialogue,complaint,,,
+C164,1,1.3,186,186,0.5,PLA,PAL,dialogue,,,,
+C165,1,1.3,186,188,2.5,PAL,AUDIENCE,aside,,,,stage direction: to the audience
+C166,1,1.3,189,189,0.5,PAL,PHAE;PLA,dialogue,command,,,will you get away from each other?
+C167,1,1.3,189,190,1,PLA,PHAE,dialogue,complaint,,,
+C168,1,1.3,190,192,2,PAL,PLA,dialogue,complaint,,,
+C169,1,1.3,192,195,3.5,PHAE,PAL,dialogue,threat;physical,,,hits him
+C170,1,1.3,196,196,0.5,PAL,PLA,dialogue,request,,,calls her Venus of the nightly wake
+C171,1,1.3,196,196,0.5,PHAE,PAL,dialogue,question;physical,,,hits him again
+C172,1,1.3,197,197,1,PLA,PHAE,dialogue,request,,,don't hit a stone
+C173,1,1.3,198,200,3,PAL,PHAE,dialogue,complaint,,,
+C174,1,1.3,201,201,1,PHAE,PAL,dialogue,,,,
+C175,1,1.3,202,202,1,PAL,PHAE,dialogue,,,,
+C176,1,1.3,203,205,3,PLA,PHAE,dialogue,greeting;question,,,hears the temple being opened
+C177,1,1.3,206,207,1.5,PHAE,PLA,dialogue,promise,,,
+C178,1,1.3,207,207,0.5,PLA,PHAE,dialogue,complaint,,,
+C179,1,1.3,208,209,2,PHAE,PLA,dialogue,promise,,,swears by Venus to free her within 3 days
+C180,1,1.3,210,210,1,PLA,PHAE,dialogue,request;physical,,,kiss
+C181,1,1.3,211,212,1.5,PHAE,PLA,dialogue,question,,,
+C182,1,1.3,212,214,2,PLA,PHAE,dialogue,request;greeting,,,"buy me, don't just ask; then exits"
+C183,1,1.3,214,214,0.5,PHAE,PAL,dialogue,complaint,,,
+C184,1,1.3,215,215,0.5,PAL,PHAE,dialogue,complaint,,,
+C185,1,1.3,215,215,0.5,PHAE,PAL,dialogue,command,,,follow me
+C186,2,2.1,216,222,7,CAP,SELF,monologue,complaint,,,leaves the shrine: Aesculapius doesn't care about him
+C187,2,2.1,223,228,6,PAL,PHAE,dialogue,advice,,,"calls into the house; Phaedromus is inside, offstage"
+C188,2,2.1,229,229,0.5,CAP,SELF,aside,question,,,who is talking?
+C189,2,2.1,229,229,0.5,PAL,SELF,aside,question,,,whose voice is that?
+C190,2,2.1,230,230,0.5,CAP,SELF,aside,question,,,isn't that Palinurus?
+C191,2,2.1,230,234,3.83,PAL,SELF,aside,,,,recognizes the pimp
+C192,2,2.1,234,234,0.33,CAP,PAL,dialogue,greeting,,,
+C193,2,2.1,234,235,0.67,PAL,CAP,dialogue,greeting;question,,,
+C194,2,2.1,235,235,0.33,CAP,PAL,dialogue,answer,,,
+C195,2,2.1,235,236,0.83,PAL,CAP,dialogue,question,,,
+C196,2,2.1,236,238,2.5,CAP,PAL,dialogue,complaint,,,lists his ailments
+C197,2,2.1,239,239,1,PAL,CAP,dialogue,,,,
+C198,2,2.1,240,240,0.5,CAP,PAL,dialogue,complaint,,,
+C199,2,2.1,240,243,3.5,PAL,CAP,dialogue,advice,,,wait while your guts pickle
+C200,2,2.1,244,244,0.5,CAP,PAL,dialogue,complaint,,,
+C201,2,2.1,244,244,0.5,PAL,CAP,dialogue,advice,,,
+C202,2,2.1,245,247,3,CAP,PAL,dialogue,request,,,asks him to interpret a dream
+C203,2,2.1,248,250,3,PAL,CAP,dialogue,,,,boasts about his dream reading
+C204,2,2.2,251,253,2.5,COQ,PAL,dialogue,command,,,lunch for the parasite
+C205,2,2.2,253,253,0.5,PAL,COQ,dialogue,request,,,
+C206,2,2.2,254,254,1,COQ,PAL,dialogue,,,,
+C207,2,2.2,255,255,0.33,PAL,COQ,dialogue,,,,
+C208,2,2.2,255,255,0.33,COQ,PAL,dialogue,command,,,
+C209,2,2.2,255,257,1.67,PAL,CAP,dialogue,,,,hands the dream over to the cook
+C210,2,2.2,257,257,0.33,CAP,PAL,dialogue,request,,,
+C211,2,2.2,257,257,0.33,PAL,CAP,dialogue,promise,,,
+C212,2,2.2,258,258,1,CAP,SELF,aside,praise,,,
+C213,2,2.2,259,259,0.5,CAP,COQ,dialogue,request,,,
+C214,2,2.2,259,259,0.5,COQ,CAP,dialogue,promise,,,
+C215,2,2.2,260,263,3.5,CAP,COQ,dialogue,narration,,,tells his dream
+C216,2,2.2,263,267,4.5,COQ,CAP,dialogue,advice,,,
+C217,2,2.2,268,269,2,CAP,COQ,dialogue,,,,
+C218,2,2.2,270,272,2.5,COQ,CAP,dialogue,advice,,,make peace with Aesculapius
+C219,2,2.2,272,273,1,CAP,COQ,dialogue,,,,exits into the shrine
+C220,2,2.2,273,273,0.5,COQ,SELF,aside,,,,'quae res male uortat tibi!'
+C221,2,2.2,274,275,2,PAL,SELF,monologue,question,,,spots Curculio
+C222,2,2.2,276,276,1,PAL,PHAE,dialogue,command,,,calls him out of the house
+C223,2,2.2,277,277,0.5,PHAE,PAL,dialogue,question,,,
+C224,2,2.2,277,279,2,PAL,PHAE,dialogue,,,,
+C225,2,2.2,279,279,0.5,PHAE,PAL,dialogue,,,,
+C226,2,2.3,280,298,19,CUR,AUDIENCE,monologue,command,,,running entrance: clears the street of imaginary passers-by
+C227,2,2.3,299,300,2,PHAE,PAL,aside,,,,
+C228,2,2.3,301,302,2,CUR,SELF,monologue,question,,,looking for Phaedromus
+C229,2,2.3,303,303,0.33,PAL,PHAE,aside,,,,
+C230,2,2.3,303,303,0.33,PHAE,PAL,aside,question,,,
+C231,2,2.3,303,303,0.33,PHAE,CUR,dialogue,greeting,,,calls out to him
+C232,2,2.3,304,304,0.5,CUR,PHAE,dialogue,question,,,doesn't see who it is yet
+C233,2,2.3,304,304,0.5,PHAE,CUR,dialogue,answer,,,
+C234,2,2.3,305,305,0.5,CUR,PHAE,dialogue,greeting,,,
+C235,2,2.3,305,306,0.83,PHAE,CUR,dialogue,greeting,,,
+C236,2,2.3,306,306,0.33,CUR,PHAE,dialogue,greeting,,,
+C237,2,2.3,306,308,1.83,PHAE,CUR,dialogue,question;physical,,,takes his right hand
+C238,2,2.3,308,308,0.5,CUR,PHAE,dialogue,question,,,
+C239,2,2.3,309,309,0.5,PHAE,CUR,dialogue,question,,,
+C240,2,2.3,309,309,0.5,CUR,PHAE,dialogue,complaint,,,pretends to faint from hunger
+C241,2,2.3,310,310,0.5,PHAE,CUR,dialogue,,,,
+C242,2,2.3,310,310,0.5,CUR,PHAE,dialogue,request;physical,,,hold me
+C243,2,2.3,311,311,0.5,PHAE,PAL,dialogue,question,,,
+C244,2,2.3,311,312,1,PHAE,SERVI,dialogue,command,,,a chair and water
+C245,2,2.3,312,312,0.5,CUR,PHAE,dialogue,complaint,,,
+C246,2,2.3,313,313,0.5,PAL,CUR,dialogue,question,,,
+C247,2,2.3,313,313,0.5,CUR,PAL,dialogue,request,,,
+C248,2,2.3,314,314,0.5,PAL,CUR,dialogue,complaint,,,
+C249,2,2.3,314,314,0.5,CUR,PAL;SERVI,dialogue,request,,,'facite uentum'
+C250,2,2.3,315,315,0.25,PAL,CUR,dialogue,physical,,,he and the slaves fart (Loeb note 16)
+C251,2,2.3,315,315,0.25,CUR,PAL,dialogue,question,,,
+C252,2,2.3,315,315,0.25,PAL,CUR,dialogue,answer,,,'uentum'
+C253,2,2.3,315,316,0.58,CUR,PAL,dialogue,complaint,,,
+C254,2,2.3,316,316,0.33,PHAE,CUR,dialogue,question,,,
+C255,2,2.3,316,316,0.33,CUR,PHAE,dialogue,answer,,,
+C256,2,2.3,317,317,0.5,PAL,CUR,dialogue,complaint,,,
+C257,2,2.3,317,319,2.5,CUR,PHAE,dialogue,complaint,,,starving
+C258,2,2.3,320,320,0.5,PHAE,CUR,dialogue,promise,,,
+C259,2,2.3,320,320,0.5,CUR,PHAE,dialogue,,,,
+C260,2,2.3,321,321,0.5,PAL,CUR,dialogue,,,,
+C261,2,2.3,321,322,1.5,CUR,PAL,dialogue,,,,
+C262,2,2.3,323,323,0.5,PHAE,CUR,dialogue,,,,lists the meats
+C263,2,2.3,323,324,1,CUR,PHAE,dialogue,question,,,
+C264,2,2.3,324,325,1,PHAE,CUR,dialogue,answer,,,
+C265,2,2.3,325,326,1,CUR,PHAE,dialogue,,,,
+C266,2,2.3,326,327,1,PHAE,CUR,dialogue,promise;question,,,
+C267,2,2.3,327,327,0.5,CUR,PHAE,dialogue,answer,,,I didn't bring anything
+C268,2,2.3,328,328,0.5,PHAE,CUR,dialogue,complaint,,,
+C269,2,2.3,328,334,6.5,CUR,PHAE,dialogue,narration,,,the friend in Caria has no money either
+C270,2,2.3,335,335,0.5,PHAE,CUR,dialogue,complaint,,,
+C271,2,2.3,335,357,21.83,CUR,PHAE,dialogue,narration,,,"meeting the soldier, dinner, the dice game"
+C272,2,2.3,357,357,0.33,PHAE,CUR,dialogue,question,,,'meosne amores?'
+C273,2,2.3,357,363,6.33,CUR,PHAE,dialogue,narration,,,steals the ring and runs
+C274,2,2.3,364,364,0.5,PHAE,CUR,dialogue,praise,,,
+C275,2,2.3,364,365,1,CUR,PHAE,dialogue,,,,let's go seal the tablets
+C276,2,2.3,365,365,0.5,PHAE,CUR,dialogue,question,,,
+C277,2,2.3,366,370,4.5,CUR,PHAE,dialogue,command,,,"eat first, then write the forged letter"
+C278,2,2.3,370,370,0.5,PHAE,CUR,dialogue,,,,
+C279,3,3.1,371,383,13,LYCO,SELF,monologue,,,,his debts; wants to buy a slave boy
+C280,3,3.1,384,385,2,CUR,PHAE,dialogue,,,,calls back into Phaedromus' house; now wearing an eye patch
+C281,3,3.1,386,390,4.5,CUR,SELF,monologue,,,,full; spots Lyco
+C282,3,3.1,390,390,0.5,CUR,PUER_CUR,dialogue,command,,,follow me
+C283,3,3.1,391,391,0.5,CUR,SELF,aside,,,,I'll pretend not to know him
+C284,3,3.1,391,391,0.5,CUR,LYCO,dialogue,greeting,Summanus,,
+C285,3,3.1,392,392,0.5,LYCO,CUR,dialogue,greeting,,,'unocule'
+C286,3,3.1,392,392,0.5,CUR,LYCO,dialogue,question,Summanus,,
+C287,3,3.1,393,394,1.5,LYCO,CUR,dialogue,,,,Cyclops joke
+C288,3,3.1,394,395,1,CUR,LYCO,dialogue,trick,Summanus,,claims a catapult wound at Sicyon
+C289,3,3.1,395,396,1.5,LYCO,CUR,dialogue,,,,
+C290,3,3.1,397,398,2,CUR,SELF,aside,,,,
+C291,3,3.1,399,400,2,CUR,LYCO,dialogue,request;trick,Summanus,,wounded for his country
+C292,3,3.1,401,401,1,LYCO,CUR,dialogue,,,,pun (Loeb note 22)
+C293,3,3.1,402,406,4.5,CUR,LYCO,dialogue,request,Summanus,,looking for the banker Lyco
+C294,3,3.1,406,407,1,LYCO,CUR,dialogue,question,,,
+C295,3,3.1,407,408,1.5,CUR,LYCO,dialogue,trick,Summanus,,says he comes from the soldier
+C296,3,3.1,409,410,2,LYCO,SELF,aside,,,,knows the name
+C297,3,3.1,411,411,0.5,LYCO,CUR,dialogue,question,,,
+C298,3,3.1,411,412,1,CUR,LYCO,dialogue,answer,Summanus,,
+C299,3,3.1,412,412,0.5,LYCO,CUR,dialogue,question,,,
+C300,3,3.1,413,413,1,CUR,LYCO,dialogue,trick,Summanus,,"calls himself Summanus, the soldier's freedman"
+C301,3,3.1,414,414,1,LYCO,CUR,dialogue,greeting;question,,,
+C302,3,3.1,415,416,2,CUR,LYCO,dialogue,answer,Summanus,,Summanus pun (Loeb note 23)
+C303,3,3.1,417,419,2.5,LYCO,CUR,dialogue,,,,I'm the man you want
+C304,3,3.1,419,420,0.83,CUR,LYCO,dialogue,question,Summanus,,
+C305,3,3.1,420,420,0.33,LYCO,CUR,dialogue,answer,,,
+C306,3,3.1,420,422,1.67,CUR,LYCO,dialogue,greeting;trick,Summanus,,greetings from Therapontigonus
+C307,3,3.1,422,422,0.33,LYCO,CUR,dialogue,question,,,
+C308,3,3.1,422,423,0.83,CUR,LYCO,dialogue,give;trick,Summanus,,hands over the sealed tablets
+C309,3,3.1,423,424,1.5,LYCO,CUR,dialogue,answer,,,recognizes the seal
+C310,3,3.1,425,426,2,CUR,LYCO,dialogue,request;trick,Summanus,,
+C311,3,3.1,427,427,0.5,LYCO,CUR,dialogue,,,,
+C312,3,3.1,427,428,1.5,CUR,LYCO,dialogue,,Summanus,,
+C313,3,3.1,429,431,2.5,LYCO,SELF,monologue,,,,reads the forged letter aloud
+C314,3,3.1,431,431,0.5,CUR,SELF,aside,,,,'he's swallowing the hook'
+C315,3,3.1,432,436,5,LYCO,SELF,monologue,,,,keeps reading the letter
+C316,3,3.1,437,437,0.5,LYCO,CUR,dialogue,question,,,where is the soldier?
+C317,3,3.1,437,441,4.5,CUR,LYCO,dialogue,trick,Summanus,,the golden statue
+C318,3,3.1,442,442,0.5,LYCO,CUR,dialogue,question,,,
+C319,3,3.1,442,448,6.5,CUR,LYCO,dialogue,trick,Summanus,,the soldier's absurd conquests
+C320,3,3.1,449,449,0.33,LYCO,CUR,dialogue,,,,
+C321,3,3.1,449,449,0.33,CUR,LYCO,dialogue,question,Summanus,,
+C322,3,3.1,449,452,3.33,LYCO,CUR,dialogue,,,,
+C323,3,3.1,453,453,0.5,CUR,LYCO,dialogue,,Summanus,,
+C324,3,3.1,453,455,1.83,LYCO,CUR,dialogue,command,,,"follow me, I'll settle it"
+C325,3,3.1,455,455,0.33,LYCO,CAP,dialogue,greeting,,,
+C326,3,3.1,455,455,0.33,CAP,LYCO,dialogue,greeting,,,enters from the shrine
+C327,3,3.1,456,456,0.5,LYCO,CAP,dialogue,question,,,
+C328,3,3.1,456,456,0.5,CAP,LYCO,dialogue,,,,
+C329,3,3.1,457,457,1,LYCO,CAP,dialogue,request;deal,,,"take the money, send the girl with him"
+C330,3,3.1,458,458,0.5,CAP,LYCO,dialogue,question,,,what about my oath?
+C331,3,3.1,458,459-60,1.5,LYCO,CAP,dialogue,,,,
+C332,3,3.1,459-60,461,1.5,CAP,LYCO;CUR,dialogue,command,,,'sequimini'
+C333,3,3.1,461,461,0.5,CUR,CAP,dialogue,command,Summanus,,
+C334,4,4.1,462,486,25,CHO,AUDIENCE,monologue,,,,tour of the Roman Forum; Loeb brackets 485
+C335,4,4.2,487,487,1,CUR,PLA,dialogue,command,Summanus,,walk ahead of me
+C336,4,4.2,488,488,1,CUR,CAP,dialogue,,Summanus,,the jewelry and clothes are hers
+C337,4,4.2,489,489,0.5,CAP,CUR,dialogue,,,,
+C338,4,4.2,489,489,0.5,CUR,CAP,dialogue,advice,Summanus,,
+C339,4,4.2,490,492,2.5,LYCO,CAP,dialogue,,,,reminds him of his promise to refund 30 minae
+C340,4,4.2,492,493,1,CAP,LYCO,dialogue,promise,,,
+C341,4,4.2,493,493,0.5,CUR,CAP,dialogue,,Summanus,,
+C342,4,4.2,494,494,0.5,CAP,CUR,dialogue,promise;deal,,,
+C343,4,4.2,494,504,10.5,CUR,CAP,dialogue,complaint,Summanus,,tirade against pimps
+C344,4,4.2,505,505,1,LYCO,CUR,dialogue,praise,,,
+C345,4,4.2,506,511,6,CUR,LYCO,dialogue,complaint,Summanus,,bankers are just as bad
+C346,4,4.2,512,512,0.5,LYCO,SELF,aside,,,,I wish I'd kept quiet
+C347,4,4.2,512,512,0.5,CAP,CUR,dialogue,,,,
+C348,4,4.2,513,515,3,CUR,CAP,dialogue,,Summanus,,
+C349,4,4.2,516,516,0.25,CUR,LYCO,dialogue,greeting,Summanus,,
+C350,4,4.2,516,516,0.25,LYCO,CUR,dialogue,greeting,,,
+C351,4,4.2,516,516,0.25,CUR,LYCO,dialogue,greeting,Summanus,,
+C352,4,4.2,516,516,0.25,CAP,CUR,dialogue,,,,
+C353,4,4.2,517,517,0.5,CUR,CAP,dialogue,question,Summanus,,
+C354,4,4.2,517,518,1,CAP,CUR,dialogue,request,,,treat her well
+C355,4,4.2,518,519,0.83,CUR,CAP,dialogue,question,Summanus,,
+C356,4,4.2,519,519,0.33,CAP,CUR,dialogue,threat,,,'malum'
+C357,4,4.2,519,519,0.33,CUR,CAP,dialogue,,Summanus,,
+C358,4,4.2,520,521,2,CAP,PLA,dialogue,command,,,she's crying
+C359,4,4.2,522,522,0.5,LYCO,CUR,dialogue,question,,,
+C360,4,4.2,522,523,1.5,CUR,LYCO,dialogue,greeting,Summanus,,
+C361,4,4.2,524,524,0.5,LYCO,CUR,dialogue,greeting,,,regards to your patron
+C362,4,4.2,524,524,0.5,CUR,LYCO,dialogue,,Summanus,,exits with Planesium and the boy
+C363,4,4.2,525,525,0.5,LYCO,CAP,dialogue,question,,,
+C364,4,4.2,525,526,1,CAP,LYCO,dialogue,request;deal,,,the 10 minae
+C365,4,4.2,526,526,0.5,LYCO,CAP,dialogue,promise,,,exits
+C366,4,4.2,527,532,6,CAP,SELF,monologue,,,,
+C367,4,4.3,533,536,4,THER,LYCO,dialogue,threat,,,
+C368,4,4.3,537,538,2,LYCO,THER,dialogue,threat,,,
+C369,4,4.3,539,539,1,THER,LYCO,dialogue,,,,
+C370,4,4.3,540,541,1.5,LYCO,THER,dialogue,,,,
+C371,4,4.3,541,542,1,THER,LYCO,dialogue,,,,
+C372,4,4.3,542,542,0.5,LYCO,THER,dialogue,question,,,
+C373,4,4.3,543,543,0.5,THER,LYCO,dialogue,question,,,
+C374,4,4.3,543,545,2.5,LYCO,THER,dialogue,answer,,,gave it to the one-eyed freedman Summanus
+C375,4,4.3,546,547,1.5,THER,LYCO,dialogue,,,,I have no freedman
+C376,4,4.3,547,548,1.5,LYCO,THER,dialogue,,,,
+C377,4,4.3,549,549,0.5,THER,LYCO,dialogue,question,,,
+C378,4,4.3,549,550,1.5,LYCO,THER,dialogue,answer,,,
+C379,4,4.3,551,551,1,THER,LYCO,dialogue,complaint,,,
+C380,4,4.3,552,553,2,LYCO,THER,dialogue,greeting,,,leaves
+C381,4,4.3,554,554,0.5,THER,LYCO,dialogue,question,,,
+C382,4,4.3,554,554,0.5,LYCO,THER,dialogue,,,,exits
+C383,4,4.3,555,556,2,THER,SELF,monologue,complaint,,,
+C384,4,4.4,557,560,3.5,CAP,SELF,monologue,,,,going to get his money from the banker
+C385,4,4.4,560,560,0.5,THER,CAP,dialogue,greeting,,,
+C386,4,4.4,561,562,2,CAP,THER,dialogue,greeting,,,
+C387,4,4.4,563,564,1.5,THER,CAP,dialogue,question,,,
+C388,4,4.4,564,565,1,CAP,THER,dialogue,answer,,,
+C389,4,4.4,565,565,0.5,THER,CAP,dialogue,question,,,
+C390,4,4.4,566,566,0.5,CAP,THER,dialogue,answer,,,
+C391,4,4.4,566,567,1.5,THER,CAP,dialogue,threat;physical,,,draws his sword
+C392,4,4.4,568,570,3,CAP,THER,dialogue,threat,,,
+C393,4,4.4,571,571,0.5,THER,CAP,dialogue,question,,,
+C394,4,4.4,571,572,1,CAP,THER,dialogue,threat,,,
+C395,4,4.4,572,576,4.5,THER,CAP,dialogue,threat,,,
+C396,4,4.4,577,581,4.5,CAP,THER,dialogue,,,,swears by his beauty kit; gave the girl to the man with the money
+C397,4,4.4,581,581,0.5,THER,CAP,dialogue,question,,,
+C398,4,4.4,582,582,0.5,CAP,THER,dialogue,answer,,,
+C399,4,4.4,582,582,0.5,THER,CAP,dialogue,question,,,
+C400,4,4.4,583,584,1.5,THER,SELF,aside,,,,realizes Curculio tricked him
+C401,4,4.4,584,585,1.5,CAP,THER,dialogue,question,,,ring pun (Loeb note 34)
+C402,4,4.4,586,586,0.5,THER,CAP,dialogue,question,,,
+C403,4,4.4,586,588,2,CAP,THER,dialogue,answer;greeting,,,look in the wheat; leaves
+C404,4,4.4,588,588,0.5,THER,CAP,dialogue,,,,
+C405,4,4.4,589,590,2,THER,SELF,monologue,,,,
+C406,5,5.1,591,598,8,CUR,AUDIENCE,monologue,complaint,,,Planesium tried to grab the ring
+C407,5,5.2,599,599,0.33,PLA,PHAE,dialogue,command,,,
+C408,5,5.2,599,599,0.33,PHAE,PLA,dialogue,question,,,
+C409,5,5.2,599,600,0.83,PLA,PHAE,dialogue,,,,
+C410,5,5.2,600,600,0.5,CUR,PLA,dialogue,,,,
+C411,5,5.2,601,601,0.5,PHAE,PLA,dialogue,question;physical,,,grabs Curculio
+C412,5,5.2,601,602,1,PLA,PHAE,dialogue,request,,,ask him where he got the ring
+C413,5,5.2,602,602,0.5,CUR,PLA,dialogue,,,,
+C414,5,5.2,603,603,0.5,PLA,CUR,dialogue,,,,
+C415,5,5.2,603,603,0.5,CUR,PLA,dialogue,,,,
+C416,5,5.2,604,604,0.5,PLA,CUR,dialogue,complaint,,,
+C417,5,5.2,604,605,1,CUR,PLA,dialogue,question,,,
+C418,5,5.2,605,605,0.5,PLA,CUR,dialogue,request,,,
+C419,5,5.2,606,606,1,CUR,PLA,dialogue,question,,,
+C420,5,5.2,607,607,0.5,PLA,CUR,dialogue,,,,'libera ego sum nata'
+C421,5,5.2,607,607,0.5,CUR,PLA,dialogue,,,,
+C422,5,5.2,608,608,0.5,PHAE,CUR,dialogue,complaint,,,
+C423,5,5.2,608,609,1.5,CUR,PHAE,dialogue,answer,,,
+C424,5,5.2,610,610,0.33,THER,SELF,aside,,,,spots Curculio
+C425,5,5.2,610,610,0.33,THER,CUR,dialogue,greeting,,,
+C426,5,5.2,610,611,0.83,CUR,THER,dialogue,,,,three throws of dice
+C427,5,5.2,611,612,1.5,THER,CUR,dialogue,command,,,give back the money or the girl
+C428,5,5.2,613,614,1.5,CUR,THER,dialogue,question,,,
+C429,5,5.2,614,614,0.5,THER,CUR,dialogue,answer,,,
+C430,5,5.2,615,615,0.33,CUR,THER,dialogue,,,,
+C431,5,5.2,615,615,0.33,THER,CUR,dialogue,,,,
+C432,5,5.2,615,615,0.33,PHAE,THER,dialogue,,,,this girl is free
+C433,5,5.2,616,616,1,THER,PHAE,dialogue,question,,,
+C434,5,5.2,617,617,1,PHAE,THER,dialogue,question,,,
+C435,5,5.2,618,619,2,THER,PHAE,dialogue,threat,,,
+C436,5,5.2,620,621,1.25,PHAE,THER,dialogue,command,,,summons him to court
+C437,5,5.2,621,621,0.25,THER,PHAE,dialogue,,,,
+C438,5,5.2,621,621,0.25,PHAE,THER,dialogue,question,,,
+C439,5,5.2,621,621,0.25,THER,PHAE,dialogue,,,,
+C440,5,5.2,622,623,1.25,PHAE,THER,dialogue,,,,
+C441,5,5.2,623,623,0.25,PHAE,CUR,dialogue,request;physical,,,touches his ear to make him a witness
+C442,5,5.2,623,623,0.25,THER,PHAE,dialogue,question,,,
+C443,5,5.2,623,624-25,1.25,CUR,THER,dialogue,command;physical,,,hits him
+C444,5,5.2,624-25,624-25,1,THER,CUR,dialogue,physical,,,hits back
+C445,5,5.2,626,626,0.33,CUR,AUDIENCE,dialogue,request,,,"'o ciues, ciues!'"
+C446,5,5.2,626,626,0.33,THER,CUR,dialogue,question,,,
+C447,5,5.2,626,626,0.33,PHAE,THER,dialogue,question,,,
+C448,5,5.2,627,627,0.5,THER,PHAE,dialogue,answer,,,
+C449,5,5.2,627,627,0.5,PHAE,CUR,dialogue,promise,,,
+C450,5,5.2,628,628,0.5,PLA,PHAE,dialogue,request,,,
+C451,5,5.2,628,628,0.5,PHAE,PLA,dialogue,promise,,,
+C452,5,5.2,629,630,1.5,PHAE,THER,dialogue,question,,,where did you get the ring?
+C453,5,5.2,630,631,1,PLA,THER,dialogue,request;physical,,,kneels
+C454,5,5.2,631,632,1.5,THER,PLA;PHAE,dialogue,question,,,
+C455,5,5.2,633,633,0.5,CUR,SELF,aside,,,,
+C456,5,5.2,633,633,0.5,THER,PHAE,dialogue,request,,,hand him over
+C457,5,5.2,634,634,0.5,CUR,PHAE,dialogue,,,,
+C458,5,5.2,634,634,0.5,PLA,THER,dialogue,request,,,
+C459,5,5.2,635,635,1,THER,PLA;PHAE;CUR,dialogue,command,,,rise; pay attention
+C460,5,5.2,636,638,2.5,THER,PLA,dialogue,narration,,,his father Periplanes had the ring
+C461,5,5.2,638,638,0.5,PLA,SELF,aside,,,,'pro Iuppiter!'
+C462,5,5.2,639,639,0.5,THER,PLA,dialogue,,,,
+C463,5,5.2,639,640,1.5,PLA,PIETAS,dialogue,prayer,,,
+C464,5,5.2,641,641,0.5,PLA,THER,dialogue,recognition;greeting,,,"'frater mi, salue'"
+C465,5,5.2,641,642,1.5,THER,PLA,dialogue,question,,,
+C466,5,5.2,643,643,0.5,PLA,THER,dialogue,answer,,,Cleobula
+C467,5,5.2,643,643,0.5,THER,PLA,dialogue,question,,,
+C468,5,5.2,644-45,650,7,PLA,THER,dialogue,narration,,,snatched at the Dionysia
+C469,5,5.2,651,652,1.5,THER,PLA,dialogue,question,,,
+C470,5,5.2,652,654,1.83,PLA,THER,dialogue,answer,,,has kept the ring
+C471,5,5.2,654,654,0.33,THER,PLA,dialogue,request,,,let me see it
+C472,5,5.2,654,655,0.67,CUR,PLA,dialogue,question,,,
+C473,5,5.2,655,655,0.33,PLA,CUR,dialogue,give,,,hands the ring over
+C474,5,5.2,655,657,1.83,THER,PLA,dialogue,recognition;greeting,,,the ring he sent on her birthday
+C475,5,5.2,657,657,0.5,PLA,THER,dialogue,recognition;greeting,,,
+C476,5,5.2,658,659,1.5,PHAE,THER;PLA,dialogue,,,,
+C477,5,5.2,659,661,2.5,CUR,THER,dialogue,,,,invites them all to dinner
+C478,5,5.2,662,662,0.5,PHAE,CUR,dialogue,command,,,
+C479,5,5.2,662,663,1.5,CUR,THER,dialogue,request;promise,,,betroth her; I'll give the dowry
+C480,5,5.2,664,664,0.5,THER,CUR,dialogue,question,,,
+C481,5,5.2,664,665,1,CUR,THER,dialogue,answer,,,
+C482,5,5.2,665,666,1.5,THER,CUR;PHAE,dialogue,,,,the pimp owes us 30 minae
+C483,5,5.2,667,667,0.5,PHAE,THER,dialogue,question,,,
+C484,5,5.2,667,670,2.83,THER,PHAE,dialogue,,,,the pimp's promise; let's go to him
+C485,5,5.2,670,670,0.33,CUR,THER,dialogue,praise,,,
+C486,5,5.2,670,671,0.67,PHAE,THER,dialogue,,,,
+C487,5,5.2,671,671,0.33,THER,PHAE,dialogue,question,,,
+C488,5,5.2,671,671,0.33,PHAE,THER,dialogue,request,,,betroth her to me
+C489,5,5.2,672,672,1,CUR,THER,dialogue,question,,,
+C490,5,5.2,673,673,0.25,THER,CUR,dialogue,,,,if she wants it
+C491,5,5.2,673,673,0.25,PLA,THER,dialogue,,,,
+C492,5,5.2,673,673,0.25,THER,PLA,dialogue,,,,'fiat'
+C493,5,5.2,673,673,0.25,CUR,THER,dialogue,praise,,,
+C494,5,5.2,674,674,0.5,PHAE,THER,dialogue,question,,,
+C495,5,5.2,674,674,0.5,THER,PHAE,dialogue,promise,,,'spondeo'
+C496,5,5.2,675,675,0.5,CUR,PHAE,dialogue,promise,,,
+C497,5,5.2,675,676-78,3.5,THER,CUR,dialogue,,,,here comes the pimp
+C498,5,5.3,679,686,7.5,CAP,SELF,monologue,,,,Lyco paid him after all
+C499,5,5.3,686,686,0.5,THER,CAP,dialogue,command,,,
+C500,5,5.3,687,687,0.33,CUR,CAP,dialogue,,,,the manuscripts give this to Phaedromus
+C501,5,5.3,687,687,0.33,CAP,THER;CUR,dialogue,,,,
+C502,5,5.3,687,687,0.33,THER,CAP,dialogue,command,,,
+C503,5,5.3,688,688,0.5,CUR,CAP,dialogue,command,,,the manuscripts give this to Phaedromus
+C504,5,5.3,688,689,1,CAP,THER;CUR,dialogue,question,,,
+C505,5,5.3,689,690,1.5,THER,CAP,dialogue,threat,,,
+C506,5,5.3,691,692,1.5,CUR,CAP,dialogue,threat,,,the manuscripts give this to the soldier
+C507,5,5.3,692,693,1,CAP,THER;CUR,dialogue,threat,,,
+C508,5,5.3,693,693,0.5,THER,PUER_THER,dialogue,command,,,put a noose on him; Leo gives this to Phaedromus
+C509,5,5.3,694,694,0.5,CUR,THER,dialogue,,,,the manuscripts give this to Phaedromus
+C510,5,5.3,694,696,2.5,CAP,PLA;PHAE,dialogue,request,,,
+C511,5,5.3,697,698,1.5,PLA,THER,dialogue,request,,,
+C512,5,5.3,698,700,2.5,THER,PLA,dialogue,,,,
+C513,5,5.3,701,701,1,PHAE,THER;CAP,dialogue,,,,
+C514,5,5.3,702,702,0.5,PHAE,PUER_THER,dialogue,command,,,let go of him
+C515,5,5.3,702,703,1,PHAE,CAP,dialogue,,,,offers to judge
+C516,5,5.3,703,703,0.5,THER,PHAE,dialogue,,,,
+C517,5,5.3,704,704,1,CAP,PHAE,dialogue,,,,
+C518,5,5.3,705,705,0.25,THER,CAP,dialogue,question,,,
+C519,5,5.3,705,705,0.25,CAP,THER,dialogue,question,,,
+C520,5,5.3,705,705,0.25,PHAE,CAP,dialogue,answer,,,'lingua'
+C521,5,5.3,705,706,1.25,CAP,PHAE,dialogue,,,,
+C522,5,5.3,707,707,0.5,PHAE,PUER_THER,dialogue,command,,,tie his neck
+C523,5,5.3,707,707,0.5,CAP,PHAE,dialogue,promise,,,
+C524,5,5.3,708,708,0.5,THER,CAP,dialogue,request,,,
+C525,5,5.3,708,708,0.5,CAP,THER,dialogue,,,,
+C526,5,5.3,709,710,1.5,THER,CAP,dialogue,question,,,
+C527,5,5.3,710,710,0.5,CAP,THER,dialogue,answer,,,
+C528,5,5.3,711,711,0.5,THER,CAP,dialogue,question,,,
+C529,5,5.3,711,711,0.5,CAP,THER,dialogue,question,,,
+C530,5,5.3,712,712,0.5,CUR,CAP,dialogue,answer,,,some manuscripts give this to the soldier
+C531,5,5.3,712,712,0.5,CAP,CUR,dialogue,command,,,
+C532,5,5.3,713,713,0.5,CUR,CAP,dialogue,,,,some manuscripts give this to the soldier
+C533,5,5.3,713,713,0.5,CAP,CUR,dialogue,,,,
+C534,5,5.3,714,714,0.5,THER,CAP,dialogue,,,,
+C535,5,5.3,714,714,0.5,PHAE,THER,dialogue,,,,
+C536,5,5.3,715,717,3,PHAE,CAP,dialogue,,,,his judgment: she's free and will marry him; refund the money
+C537,5,5.3,718,718,1,THER,CAP,dialogue,threat,,,
+C538,5,5.3,719,721,2.33,CAP,PHAE;THER,dialogue,complaint,,,
+C539,5,5.3,721,721,0.33,THER,CAP,dialogue,question,,,
+C540,5,5.3,721,722,1.33,CAP,THER,dialogue,answer,,,
+C541,5,5.3,723,723,1,THER,CAP,dialogue,threat,,,
+C542,5,5.3,724,724,1,CAP,THER,dialogue,,,,
+C543,5,5.3,725,725,0.33,THER,CAP,dialogue,question,,,
+C544,5,5.3,725,725,0.33,CAP,THER,dialogue,,,,
+C545,5,5.3,725,725,0.33,THER,CAP,dialogue,threat;physical,,,bares his arms
+C546,5,5.3,726,726,0.5,CAP,THER,dialogue,question,,,
+C547,5,5.3,726,727,0.75,THER,CAP,dialogue,threat,,,
+C548,5,5.3,727,727,0.25,CAP,THER,dialogue,deal,,,pays up
+C549,5,5.3,727,727,0.25,THER,CAP,dialogue,,,,
+C550,5,5.3,727,727,0.25,CAP,THER,dialogue,,,,
+C551,5,5.3,728,728,1,PHAE,THER,dialogue,,,,dinner and wedding today
+C552,5,5.3,729,729,0.5,CUR,PHAE;THER;PLA,dialogue,,,,the manuscripts give this line to the soldier
+C553,5,5.3,729,729,0.5,CUR,AUDIENCE,dialogue,request,,,"'spectatores, plaudite'"
+C554,1,1.1,22,22,1,PLA,PHAE,reported,,,PHAE,"mentioned in 1 line, not shown onstage: she sneaks out to him at night"
+C555,1,1.1,46,46,1,CAP,PLA,reported,,,PHAE,"mentioned in 1 line, not shown onstage: wants to make her a prostitute"
+C556,1,1.1,59,61,3,PLA,PHAE,reported,,,PHAE,"mentioned in 3 lines, not shown onstage: sneaks over, kisses him, runs off"
+C557,1,1.1,63,65,3,CAP,PHAE,reported,,,PHAE,"mentioned in 3 lines, not shown onstage: demands 30 minae, then a talent"
+C558,1,1.1,67,68,2,PHAE,CUR,reported,,,PHAE,"mentioned in 2 lines, not shown onstage: sent him to Caria to borrow money"
+C559,1,1.3,173,173,1,CAP,PLA,reported,,,PHAE,"mentioned in 1 line, not shown onstage: keeps her away from Phaedromus"
+C560,1,1.3,206,207,2,PHAE,CUR,reported,,,PHAE,"mentioned in 2 lines, not shown onstage: sent him to Caria 3 days ago"
+C561,2,2.3,329,329,1,PHAE,CUR,reported,command,,CUR,"mentioned in 1 line, not shown onstage: sent him to Caria"
+C562,2,2.3,330,334,5,CUR,SODALIS,reported,request,,CUR,"mentioned in 5 lines, not shown onstage: asked the friend for a loan; he had no money"
+C563,2,2.3,337,342,6,THER,CUR,reported,,,CUR,"mentioned in 6 lines, not shown onstage: soldier meets him in the market, asks about Lyco and Cappadox"
+C564,2,2.3,343,344,2,THER,CAP,reported,deal,,CUR,"mentioned in 2 lines, not shown onstage: bought Planesium for 30 minae, plus 10 for clothes and jewelry"
+C565,2,2.3,345,348,4,THER,LYCO,reported,deal,,CUR,"mentioned in 4 lines, not shown onstage: left the money with Lyco: pay whoever brings tablets with his seal"
+C566,2,2.3,349,361,13,CUR,THER,reported,trick,,CUR,"mentioned in 13 lines, not shown onstage: dinner and dice; Curculio steals his ring"
+C567,3,3.1,432,436,5,THER,LYCO,reported,trick,,LYCO,"mentioned in 5 lines, not shown onstage: forged letter in the soldier's name (really written by Phaedromus)"
+C568,3,3.1,458,458,1,CAP,THER,reported,promise,,CAP,"mentioned in 1 line, not shown onstage: the oath he swore"
+C569,4,4.1,464,466,3,CHO,PHAE,reported,deal,,CHO,"mentioned in 3 lines, not shown onstage: rented costumes to Phaedromus"
+C570,4,4.2,490,492,3,CAP,THER,reported,promise,,LYCO,"mentioned in 3 lines, not shown onstage: promised a refund if she is ever claimed as free"
+C571,4,4.2,528,529,2,CAP,PLA,reported,deal,,CAP,"mentioned in 2 lines, not shown onstage: bought her as a little girl for 10 minae"
+C572,4,4.3,535,536,2,THER,LYCO,reported,deal,,THER,"mentioned in 2 lines, not shown onstage: deposited 30 minae with him"
+C573,4,4.3,543,545,3,LYCO,CUR,reported,deal;trick,,LYCO,"mentioned in 3 lines, not shown onstage: paid the money to 'Summanus'"
+C574,4,4.4,581,582,2,CAP,CUR,reported,deal;trick,,CAP,"mentioned in 2 lines, not shown onstage: handed the girl to 'Summanus'"
+C575,4,4.4,584,584,1,CUR,THER,reported,trick,,THER,"mentioned in 1 line, not shown onstage: stole his ring"
+C576,5,5.1,595,598,4,PLA,CUR,reported,question;physical,,CUR,"mentioned in 4 lines, not shown onstage: asks where he got the ring; bites his hand"
+C577,5,5.2,609,609,1,CUR,THER,reported,trick,,CUR,"mentioned in 1 line, not shown onstage: tricked the soldier at dice"
+C578,5,5.2,614,614,1,CUR,CAP,reported,,,THER,"mentioned in 1 line, not shown onstage: took the girl from the pimp today"
+C579,5,5.2,618,618,1,THER,LYCO,reported,deal,,THER,"mentioned in 1 line, not shown onstage: paid for her through his banker"
+C580,5,5.2,636,639,4,PERIPLANES,THER,reported,give,,THER,"mentioned in 4 lines, not shown onstage: father gave him the ring and made him heir"
+C581,5,5.2,644-45,648,5,ARCHESTRATA,PLA,reported,,,PLA,"mentioned in 5 lines, not shown onstage: took her to the Dionysia, where she was snatched"
+C582,5,5.2,656,656,1,THER,PLA,reported,give,,THER,"mentioned in 1 line, not shown onstage: sent her the ring on her birthday"
+C583,5,5.2,667,669,3,CAP,THER,reported,promise,,THER,"mentioned in 3 lines, not shown onstage: promised a refund if she is ever claimed as free"
+C584,5,5.3,682,685,4,LYCO,CAP,reported,deal,,CAP,"mentioned in 4 lines, not shown onstage: went round the banks, then paid him the 10 minae"
+C585,5,5.3,709,714,6,CAP,THER,reported,promise,,THER,"mentioned in 6 lines, not shown onstage: the refund promise, made in front of Lyco and Curculio"

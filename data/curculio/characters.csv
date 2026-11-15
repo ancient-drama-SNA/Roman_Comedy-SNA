@@ -1,0 +1,25 @@
+id,name,loeb_label,kind,stock_type,gender,status_start,status_end,status_certainty,aliases,onstage_role,note
+PAL,Palinurus,seruos,person,servus,m,enslaved,enslaved,stated,,speaking,belongs to Phaedromus; called seruos at 193
+PHAE,Phaedromus,adulescens,person,adulescens,m,free,free,inferred,,speaking,young man in love with Planesium
+LEAE,Leaena,anus,person,anus,f,enslaved,enslaved,inferred,,speaking,doorkeeper in the pimp's house; calls Cappadox her master (erus) at 159
+PLA,Planesium,uirgo,person,virgo,f,enslaved,free,stated,,speaking,"owned by Cappadox; revealed freeborn, Therapontigonus' sister (5.2); declared free at 715"
+CAP,Cappadox,leno,person,leno,m,free,free,inferred,,speaking,"pimp; sick, sleeping in the shrine of Aesculapius"
+COQ,Coquos (Cook),coquos,person,coquus,m,unknown,unknown,unknown,,speaking,works for Phaedromus
+CUR,Curculio,parasitus,person,parasitus,m,free,free,inferred,Summanus,speaking,"Phaedromus' parasite; poses as Summanus, the soldier's one-eyed freedman, in Act 3"
+LYCO,Lyco,tarpezita,person,trapezita,m,free,free,inferred,,speaking,banker
+CHO,Choragus (Costume supplier),choragus,person,choragus,m,unknown,unknown,unknown,,speaking,one speech only (Act 4)
+THER,Therapontigonus Platagidorus,miles,person,miles,m,free,free,inferred,,speaking,soldier; Phaedromus' rival; Planesium's brother
+SERVI,Phaedromus' slaves,(not in cast list),group,servus,m,enslaved,enslaved,inferred,,silent,carry the candle and wine jug in Act 1; 'puere' addressed at 75
+PUER_CUR,Curculio's slave boy,(not in cast list),person,puer,m,enslaved,enslaved,inferred,,silent,follows Curculio in Acts 3 to 4
+PUER_THER,Therapontigonus' slave boy,(not in cast list),person,puer,m,enslaved,enslaved,inferred,,silent,with the soldier in Acts 4 to 5
+PERIPLANES,Periplanes,,person,,m,free,free,stated,,mentioned_only,father of Therapontigonus and Planesium (636)
+CLEOBULA,Cleobula,,person,,f,free,free,inferred,,mentioned_only,Planesium's mother (643)
+ARCHESTRATA,Archestrata,,person,nutrix,f,unknown,unknown,unknown,,mentioned_only,Planesium's nurse (644)
+SODALIS,Phaedromus' friend in Caria,,person,,m,free,free,inferred,,mentioned_only,"asked by Curculio for a loan (67-68, 330ff)"
+AUDIENCE,Audience,,audience,,,,,,,,for lines spoken to the spectators
+SELF,(no one / self),,self,,,,,,,,for lines a character says to himself or herself
+VENUS,Venus,,god,,f,,,,,,altar onstage in front of the pimp's house
+FORES,Door of the pimp's house,,object,,,,,,,,Phaedromus greets and 'feeds' it wine
+PESSULI,Door bolts,,object,,,,,,,,Phaedromus sings to them (147-155)
+VINUM,Wine (the jug),,object,,,,,,,,Leaena addresses the smell of the wine (98-108)
+PIETAS,Pietas,,god,,f,,,,,,Planesium calls on her at 639
